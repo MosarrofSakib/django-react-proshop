@@ -171,14 +171,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = '/images/'
+MEDIA_URL = 'static/images/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
     BASE_DIR / 'build/static'
 ]
 
-MEDIA_ROOT = BASE_DIR / 'static/images'
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+MEDIA_ROOT = BASE_DIR / 'static/images/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
