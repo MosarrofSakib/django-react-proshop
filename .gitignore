@@ -1,0 +1,7 @@
+/backend/__pychache__
+/base/__pychache__
+/base/views/__pychache__
+/base/urls/__pychache__
+
+.myEnv
+/node_modules
